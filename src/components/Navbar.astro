@@ -1,11 +1,21 @@
-<nav class="w-full flex justify-center py-8">
+<nav class="lg:w-full flex justify-center py-8">
     <div class="bg-secondary-color flex items-center justify-between w-11/12 rounded-3xl px-7 py-5">
-        
+
         <!--Logo-->
         <a class="text-white font-bold text-2xl" href="/">debuggeando<span class="text-tertiary-color">.</span>dev</a>
+
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <!-- Boton hamburguesa -->
+        <label for="menu-toggle" class="md:hidden cursor-pointer text-white text-3xl">
+        ☰
+        </label>
         
         <!--Menu -->
-        <ul class="flex text-white">
+        <ul class="hidden peer-checked:flex flex-col gap-4 absolute top-30 right-8 bg-secondary-color p-5 rounded-2xl shadow-lg
+                   md:flex md:flex-row md:static md:bg-transparent md:shadow-none md:gap-0 md:p-0 text-white">
+
             <li><a class="w-10 transition-all duration-300 ease-in-out hover:bg-tertiary-color px-8 py-2 rounded-3xl" href="#inicio">Inicio</a></li>
             <li><a class="w-10 transition-all duration-300 ease-in-out hover:bg-tertiary-color px-8 py-2 rounded-3xl" href="#sobre-mi">Sobre mí</a></li>
             <li><a class="w-10 transition-all duration-300 ease-in-out hover:bg-tertiary-color px-8 py-2 rounded-3xl" href="#proyectos">Proyectos</a></li>

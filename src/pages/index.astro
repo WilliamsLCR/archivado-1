@@ -5,15 +5,16 @@ import Layout from "../layouts/Layout.astro"
 <Layout title="Portfolio | Williams">
     <div id="inicio" class="text-white w-full flex flex-col items-center py-8">
         <section class="font-bold w-11/12 pb-50">
-        <p class="text-2xl px-2 pt-35">
+        <p class="text-1xl pt-35 md:px-2 lg:px-2 lg:text-2xl">
             Hola, me llamo Williams
         </p>
-        <p class="text-8xl">DESARROLLADOR</p>
-        <p class="text-8xl pb-5">FRONTEND<span class="text-tertiary-color">.</span></p>
+        <p class="text-4xl md:text-6xl lg:text-8xl">DESARROLLADOR</p>
+        <p class="text-4xl md:text-6xl lg:text-8xl pb-5">FRONTEND<span class="text-tertiary-color">.</span></p>
+
 
         <div class="flex items-center">
-            <a href="/CV-Williams.pdf" download
-               class="bg-secondary-color w-70 h-15 rounded-full flex items-center justify-center font-normal text-2xl text-white transition-all duration-300 ease-in-out hover:bg-tertiary-color"
+            <a href="https://www.linkedin.com/in/williamslcr/" target="_blank"
+               class="bg-secondary-color w-50 h-10 lg:w-70 lg:h-15 rounded-full flex items-center justify-center font-normal text-1xl lg:text-2xl text-white transition-all duration-300 ease-in-out hover:bg-tertiary-color"
                title="Descarga mi curruculum vitae"
                >
             Descarga mi CV.
@@ -34,48 +35,50 @@ import Layout from "../layouts/Layout.astro"
 
     <section id="sobre-mi" class="bg-secondary-color w-screen">
         <div class="px-20">
-            <h2 class="pt-35 font-bold text-5xl">
+            <h2 class="pt-35 md:pt-35 font-bold text-3xl md:text-5xl">
                 SOBRE MÍ<span class="text-tertiary-color">.</span>
             </h2>
-            <p class="pt-5 w-200">
+            <p class="pt-5 max-w-md md:max-w-2xl">
                 Desarrollador web en camino a ser full-stack. Mi enfoque actual está en el front-end, donde busco crear experiencias de usuario excepcionales. Mi meta es dominar el back-end para construir soluciones completas y robustas que impulsen la innovación.
             </p>
             <h2 class="font-bold text-2xl pt-10 pb-5">
                 Tecnologías<span class="text-tertiary-color">:</span>
             </h2>
-            <div class="flex gap-3 pb-35">
-                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="HTML">
-                    <svg class="size-9">
+            <div class="flex gap-3 pb-5">
+                <span class="size-12 lg:size-18 bg-primary-color rounded-full flex items-center justify-center" title="HTML">
+                    <svg class="size-6 lg:size-9">
                         <use href="./sprites.svg#html"/>
                     </svg>
                 </span>
-                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="CSS">
-                    <svg class="size-9">
+                <span class="size-12 lg:size-18 bg-primary-color rounded-full flex items-center justify-center" title="CSS">
+                    <svg class="size-6 lg:size-9">
                         <use href="./sprites.svg#css-old"/>
                     </svg>
                 </span>
-                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="JavaScript">
-                    <svg class="size-9">
+                <span class="size-12 lg:size-18 bg-primary-color rounded-full flex items-center justify-center" title="JavaScript">
+                    <svg class="size-6 lg:size-9">
                         <use href="./sprites.svg#js"/>
                     </svg>
                 </span>
-                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="Git">
-                    <svg class="size-9">
+                <span class="size-12 lg:size-18 bg-primary-color rounded-full flex items-center justify-center" title="Git">
+                    <svg class="size-6 lg:size-9">
                         <use href="./sprites.svg#git"/>
                     </svg>
                 </span>
-                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="Tailwind CSS">
-                    <svg class="size-9">
+            </div>
+            <div class="flex gap-3 pb-35">
+                <span class="size-12 lg:size-18 bg-primary-color rounded-full flex items-center justify-center" title="Tailwind CSS">
+                    <svg class="size-6 lg:size-9">
                         <use href="./sprites.svg#tailwindcss"/>
                     </svg>
                 </span>
-                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="Astro">
-                    <svg class="size-9">
+                <span class="size-12 lg:size-18 bg-primary-color rounded-full flex items-center justify-center" title="Astro">
+                    <svg class="size-6 lg:size-9">
                         <use href="./sprites.svg#astro"/>
                     </svg>
                 </span>
-                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="Figma">
-                    <svg class="size-9">
+                <span class="size-12 lg:size-18 bg-primary-color rounded-full flex items-center justify-center" title="Figma">
+                    <svg class="size-6 lg:size-9">
                         <use href="./sprites.svg#figma"/>
                     </svg>
                 </span>
@@ -96,15 +99,13 @@ import Layout from "../layouts/Layout.astro"
             </div>
         </div>
     </section>
-
-    <section id="contacto">
         
-    <section id="sobre-mi" class="bg-secondary-color w-screen">
+    <section id="contacto" class="bg-secondary-color w-screen">
         <div class="px-20">
-            <h2 class="pt-35 font-bold text-5xl">
+            <h2 class="pt-35 md:pt-35 font-bold text-3xl md:text-5xl">
                 CONTÁCTAME<span class="text-tertiary-color">.</span>
             </h2>
-            <p class="pt-5 w-200">
+            <p class="pt-5 max-w-md md:max-w-2xl">
                 Próximamente, por ahora me puedes contactar por <a href="https://www.linkedin.com/in/williamslcr/" target="_blank" class="font-bold underline">LinkedIn</a>
             </p>
         </div>
