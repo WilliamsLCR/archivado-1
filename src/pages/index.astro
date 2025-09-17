@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Portfolio | Williams">
-    <div class="text-white w-full flex flex-col items-center py-8">
+    <div id="inicio" class="text-white w-full flex flex-col items-center py-8">
         <section class="font-bold w-11/12 pb-50">
         <p class="text-2xl px-2 pt-35">
             Hola, me llamo Williams
@@ -11,36 +11,106 @@ import Layout from "../layouts/Layout.astro"
         <p class="text-8xl">DESARROLLADOR</p>
         <p class="text-8xl pb-5">FRONTEND<span class="text-tertiary-color">.</span></p>
 
-        <div>
+        <div class="flex items-center">
             <a href="/CV-Williams.pdf" download
-               class="bg-secondary-color w-70 h-15 rounded-full flex items-center justify-center font-normal text-2xl text-white transition-all duration-300 ease-in-out hover:bg-tertiary-color">
+               class="bg-secondary-color w-70 h-15 rounded-full flex items-center justify-center font-normal text-2xl text-white transition-all duration-300 ease-in-out hover:bg-tertiary-color"
+               title="Descarga mi curruculum vitae"
+               >
             Descarga mi CV.
             </a>
 
-            <a href="">
-                <svg>
-                    <use />
+            <a href="https://www.linkedin.com/in/williamslcr/" target="_blank" class="pl-10" title="Mi LinkedIn">
+                <svg class="size-9 fill-white transition-all duration-300 ease-in-out hover:fill-tertiary-color">
+                    <use href="./sprites.svg#linkedin"/>
+                </svg>
+            </a>
+            <a href="https://github.com/WilliamsLCR/" target="_blank" class="pl-10" title="Mi GitHub">
+                <svg class="size-9 fill-white transition-all duration-300 ease-in-out hover:fill-tertiary-color">
+                    <use href="./sprites.svg#github"/>
                 </svg>
             </a>
         </div>
         </section>
 
-    <section id="aboutMe" class="bg-secondary-color w-screen">
+    <section id="sobre-mi" class="bg-secondary-color w-screen">
         <div class="px-20">
             <h2 class="pt-35 font-bold text-5xl">
                 SOBRE MÍ<span class="text-tertiary-color">.</span>
             </h2>
             <p class="pt-5 w-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta dicta? Repellat distinctio voluptatibus debitis non laudantium at voluptates, quod aperiam, dignissimos aliquid ipsa mollitia necessitatibus provident minima, optio in.
+                Desarrollador web en camino a ser full-stack. Mi enfoque actual está en el front-end, donde busco crear experiencias de usuario excepcionales. Mi meta es dominar el back-end para construir soluciones completas y robustas que impulsen la innovación.
             </p>
-            <h2 class="font-bold text-2xl pt-10">
-                Tecnologías:
+            <h2 class="font-bold text-2xl pt-10 pb-5">
+                Tecnologías<span class="text-tertiary-color">:</span>
             </h2>
-            <div class="flex">
-                
+            <div class="flex gap-3 pb-35">
+                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="HTML">
+                    <svg class="size-9">
+                        <use href="./sprites.svg#html"/>
+                    </svg>
+                </span>
+                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="CSS">
+                    <svg class="size-9">
+                        <use href="./sprites.svg#css-old"/>
+                    </svg>
+                </span>
+                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="JavaScript">
+                    <svg class="size-9">
+                        <use href="./sprites.svg#js"/>
+                    </svg>
+                </span>
+                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="Git">
+                    <svg class="size-9">
+                        <use href="./sprites.svg#git"/>
+                    </svg>
+                </span>
+                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="Tailwind CSS">
+                    <svg class="size-9">
+                        <use href="./sprites.svg#tailwindcss"/>
+                    </svg>
+                </span>
+                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="Astro">
+                    <svg class="size-9">
+                        <use href="./sprites.svg#astro"/>
+                    </svg>
+                </span>
+                <span class="size-18 bg-primary-color rounded-full flex items-center justify-center" title="Figma">
+                    <svg class="size-9">
+                        <use href="./sprites.svg#figma"/>
+                    </svg>
+                </span>
             </div>
         </div>
     </section>
 
-    </div>
+    <section id="proyectos" class="w-11/12 pb-50">
+        <h2 class="pt-35 font-bold text-5xl">
+            PROYECTOS<span class="text-tertiary-color">.</span>
+        </h2>
+
+        <div class="flex items-center justify-center py-10">
+            <div class="bg-secondary-color w-100 h-30 rounded-3xl flex items-center justify-center">
+                <h2>
+                    Pronto habrá proyectos aquí...
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        
+    <section id="sobre-mi" class="bg-secondary-color w-screen">
+        <div class="px-20">
+            <h2 class="pt-35 font-bold text-5xl">
+                CONTÁCTAME<span class="text-tertiary-color">.</span>
+            </h2>
+            <p class="pt-5 w-200">
+                Próximamente, por ahora me puedes contactar por <a href="https://www.linkedin.com/in/williamslcr/" target="_blank" class="font-bold underline">LinkedIn</a>
+            </p>
+        </div>
+        <div class="pb-35"></div>
+    </section>
+    <p class="pt-7 flex items-center justify-center">
+        Hecho con ❤️ por Williams.
+    </p>
 </Layout>
