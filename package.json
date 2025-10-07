@@ -12,5 +12,8 @@
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.13.7",
     "tailwindcss": "^4.1.13"
+  },
+  "engine": {
+    "node": "=20.22.0"
   }
 }
